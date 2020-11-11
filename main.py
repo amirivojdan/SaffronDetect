@@ -1,8 +1,6 @@
 import numpy as np
 import os
 from skimage.feature import hog
-import joblib
-from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
