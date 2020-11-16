@@ -1,5 +1,5 @@
 # Saffron Detect
- A Fast and Accurate In-Field Vision System to Detect Saffron Flower
+ A Fast and Accurate In-Field Vision System to Detect Saffron Flower Under Diurnal Illumination Fluctuations
  
  ### Todos
 
