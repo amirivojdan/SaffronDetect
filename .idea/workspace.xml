@@ -26,7 +26,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.OOMain">
+    <configuration name="OOMain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SaffronDetect" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="SaffronDetect" type="PythonConfigurationType" factoryName="Python">
       <module name="SaffronDetect" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,9 +93,11 @@
     <list>
       <item itemvalue="Python.SaffronDetect" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.OOMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OOMain" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -95,22 +118,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1605097057851" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1605101027508">
+    <state width="750" height="438" key="DebuggerActiveHint" timestamp="1605483396900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605101027508" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1605101027507">
+    <state width="750" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1605483396900" />
+    <state width="1345" height="245" key="GridCell.Tab.0.bottom" timestamp="1605489537635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605101027507" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1605101027507">
+    <state width="1345" height="245" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605489537635" />
+    <state width="1345" height="245" key="GridCell.Tab.0.center" timestamp="1605489537635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605101027507" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1605101027507">
+    <state width="1345" height="245" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605489537635" />
+    <state width="1345" height="245" key="GridCell.Tab.0.left" timestamp="1605489537635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605101027507" />
+    <state width="1345" height="245" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605489537635" />
+    <state width="1345" height="245" key="GridCell.Tab.0.right" timestamp="1605489537635">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="245" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605489537635" />
+    <state width="1345" height="245" key="GridCell.Tab.1.bottom" timestamp="1605489537636">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="245" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605489537636" />
+    <state width="1345" height="245" key="GridCell.Tab.1.center" timestamp="1605489537636">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="245" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605489537636" />
+    <state width="1345" height="245" key="GridCell.Tab.1.left" timestamp="1605489537636">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="245" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605489537636" />
+    <state width="1345" height="245" key="GridCell.Tab.1.right" timestamp="1605489537636">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="245" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605489537636" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605100972191">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
