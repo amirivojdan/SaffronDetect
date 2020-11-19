@@ -4,7 +4,7 @@
  ### Todos
 
  - ~~Object-Oriented Implementation~~
- - PCA dimensionality reduction
+ - ~~PCA dimensionality reduction~~
  - ~~Utilize GridSearchCV to find better parameter values~~
  - Add more samples to dataset
  - Apply Sliding Window
