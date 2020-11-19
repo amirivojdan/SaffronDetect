@@ -3,9 +3,9 @@
  
  ### Todos
 
- - Object-Oriented Implementation
+ - ~~Object-Oriented Implementation~~
  - PCA dimensionality reduction
- - Utilize GridSearchCV to find better parameter values
+ - ~~Utilize GridSearchCV to find better parameter values~~
  - Add more samples to dataset
  
 License
