@@ -4,9 +4,10 @@ from PIL import Image
 from skimage.feature import hog
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
-from sklearn.model_selection import cross_val_score
 from sklearn.metrics import plot_roc_curve
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 
 
 class SaffronDetect:
@@ -24,7 +25,7 @@ class SaffronDetect:
         self.parameters = []
 
     def load_dataset(self, positive_samples_path, negative_samples_path):
-        print("loading dataset")
+        print("Loading dataset...")
         positive_samples = os.listdir(positive_samples_path)
         negative_samples = os.listdir(negative_samples_path)
 
@@ -49,17 +50,7 @@ class SaffronDetect:
                                      block_norm='L2', feature_vector=True)
             self.samples.append(feature_descriptor)
             self.labels.append(0)
-
-        (trainData, testData, trainLabels, testLabels) = train_test_split(
-            np.array(self.samples), self.labels, test_size=0.50, shuffle=True, random_state=0)
-
-        self.train_samples = trainData
-        self.train_labels = trainLabels
-
-        self.test_samples = testData
-        self.test_labels = testLabels
-
-        print("we are done with dataset")
+        print("We are done with the dataset.")
 
     def save_models(self):
         pass
@@ -71,24 +62,40 @@ class SaffronDetect:
     def load_models(self):
         pass
 
+    def pre_processing(self, test_size=0.2):
+
+        (train_samples, test_samples, train_labels, test_labels) = train_test_split(
+            np.array(self.samples), self.labels, test_size=test_size, shuffle=True, random_state=0)
+
+        self.train_samples = train_samples
+        self.train_labels = train_labels
+
+        self.test_samples = test_samples
+        self.test_labels = test_labels
+
+        standard_scaler = StandardScaler()
+        self.train_samples = standard_scaler.fit_transform(self.train_samples)
+        self.test_samples = standard_scaler.transform(self.test_samples)
+
+        # print(self.train_samples.shape)
+        pca = PCA(n_components=0.99, whiten=True)
+        self.train_samples = pca.fit_transform(self.train_samples)
+        # print(self.train_samples.shape)
+        self.test_samples = pca.transform(self.test_samples)
+
     def train_classifier(self, scoring='f1_macro'):
 
-        (trainData, testData, trainLabels, testLabels) = train_test_split(
-            np.array(self.samples), self.labels, test_size=0.50, shuffle=True, random_state=0)
-
-        self.train_samples = trainData
-        self.train_labels = trainLabels
-
-        print("training just Started! ")
+        print("Training just Started! ")
         i = 0
         for classifier in self.classifiers:
             clf = GridSearchCV(classifier, self.parameters[i], scoring=scoring)
             clf.fit(self.train_samples, self.train_labels)
-            predictions = clf.predict(testData)
-            print(classification_report(testLabels, predictions))
+            predictions = clf.predict(self.test_samples)
+            print(classification_report(self.test_labels, predictions))
             self.classifiers[i] = clf.best_estimator_
             i = i+1
-        print("Well Done Bro! ")
+
+        print("Training Finished!")
 
     def evaluate(self):
         pass
@@ -98,4 +105,3 @@ class SaffronDetect:
         for classifier in self.classifiers:
             plot_roc_curve(classifier, self.test_samples, self.test_labels, ax=ax)
         plt.show()
-        pass
