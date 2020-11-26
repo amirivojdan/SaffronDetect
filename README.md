@@ -4,6 +4,10 @@
 ![image](https://user-images.githubusercontent.com/5096712/100359636-116d0e80-300d-11eb-925f-9a4304cdf81b.png)
 ![image](https://user-images.githubusercontent.com/5096712/100359980-90fadd80-300d-11eb-9487-8e2fbeb34fb8.png)
 ![image](https://user-images.githubusercontent.com/5096712/100360014-9b1cdc00-300d-11eb-9fd4-635edbd381fd.png)
+
+| Before Applying PCA | After Applying PCA |
+|------------|-------------|
+| <img src="https://user-images.githubusercontent.com/5096712/100359980-90fadd80-300d-11eb-9487-8e2fbeb34fb8.png" width="250"> | <img src="https://user-images.githubusercontent.com/5096712/100360014-9b1cdc00-300d-11eb-9fd4-635edbd381fd.png" width="250"> |
  ### Todos
 
  - [x] Object-Oriented Implementation
