@@ -11,7 +11,7 @@
  - [x] Object-Oriented Implementation
  - [x] PCA dimensionality reduction
  - [x] Utilize GridSearchCV to find better parameter values
- - Add Color Moments to improve the overall acuracy
+ - Add Color Moments to improve the overall accuracy
  - Add more samples to the dataset
  - Apply Sliding Window
  
